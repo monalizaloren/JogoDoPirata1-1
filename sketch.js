@@ -33,18 +33,5 @@ function setup() {
 
 function draw() {
 
-  image(backgroundImg, 0, 0, width, height);
-
-  Engine.update(engine);
-  rect(ground.position.x, ground.position.y, width * 2, 1);
-  /*função push() salva as configurações e transformações
-  do estilo de desenho atual, enquanto pop() restaura essas
-  configurações.*/
-  
-  push();
-  imageMode(CENTER);
-  image(towerImage,tower.position.x, tower.position.y, 160, 310);
-  pop();
-
-  cannon.display();
+ 
 }
